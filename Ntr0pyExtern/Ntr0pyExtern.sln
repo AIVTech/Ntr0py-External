@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ntr0pyExtern", "Ntr0pyExtern.csproj", "{D0DDF6C6-BDDC-4CB4-907F-9AA3FCF48D7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0DDF6C6-BDDC-4CB4-907F-9AA3FCF48D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DDF6C6-BDDC-4CB4-907F-9AA3FCF48D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DDF6C6-BDDC-4CB4-907F-9AA3FCF48D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DDF6C6-BDDC-4CB4-907F-9AA3FCF48D7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE928510-AF57-4B74-A100-02E2139A3281}
+	EndGlobalSection
+EndGlobal

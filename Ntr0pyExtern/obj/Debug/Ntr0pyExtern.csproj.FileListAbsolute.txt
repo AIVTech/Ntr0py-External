@@ -1,0 +1,11 @@
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\bin\Debug\Ntr0pyExtern.exe.config
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\bin\Debug\Ntr0pyExtern.exe
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\bin\Debug\Ntr0pyExtern.pdb
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\bin\Debug\VAMemory.dll
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Debug\Ntr0pyExtern.csprojResolveAssemblyReference.cache
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Debug\Ntr0pyExtern.Form1.resources
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Debug\Ntr0pyExtern.Properties.Resources.resources
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Debug\Ntr0pyExtern.csproj.GenerateResource.Cache
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Debug\Ntr0pyExtern.csproj.CoreCompileInputs.cache
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Debug\Ntr0pyExtern.exe
+C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Debug\Ntr0pyExtern.pdb
