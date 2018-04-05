@@ -77,5 +77,33 @@ namespace Ntr0pyExtern
         {
 
         }
+
+        public void SetESPGlowMode(string mode)
+        {
+            switch (mode)
+            {
+                case "healthGlow":
+                    espGlow.glowHealth = true;
+                    espGlow.glowAllPlayers = false;
+                    break;
+                case "allPlayers":
+                    espGlow.glowAllPlayers = true;
+                    espGlow.glowHealth = false;
+                    break;
+                case "healthGlowAllPlayers":
+                    espGlow.glowAllPlayers = true;
+                    espGlow.glowHealth = true;
+                    break;
+                case "default":
+                    espGlow.glowAllPlayers = false;
+                    espGlow.glowHealth = false;
+                    break;
+                default:
+                    espGlow.glowAllPlayers = false;
+                    espGlow.glowHealth = false;
+                    break;
+            }
+
+        }
     }
 }

@@ -32,6 +32,7 @@ namespace Ntr0pyExtern
         private void Form1_Load(object sender, EventArgs e)
         {
             cheat = new CheatBase();
+            espGlowOptionsComboBox.SelectedIndex = 0;
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
@@ -65,14 +66,17 @@ namespace Ntr0pyExtern
             {
                 // Turn ESP Glow On
                 cheat.SetESPGlow(true);
+                espGlowOptionsComboBox.Enabled = true;
             }
             else
             {
                 // Turn ESP Glow Off
                 cheat.SetESPGlow(false);
+                espGlowOptionsComboBox.Enabled = false;
             }
         }
 
+        // Still in Development
         private void noRecoilCbx_CheckedChanged(object sender, EventArgs e)
         {
             if (noRecoilCbx.Checked)
@@ -96,6 +100,29 @@ namespace Ntr0pyExtern
             {
                 // Turn TriggerBot Off
                 cheat.SetTriggerBot(false);
+            }
+        }
+
+        private void espGlowOptionsComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = espGlowOptionsComboBox.SelectedIndex;
+            switch (index)
+            {
+                case 0:
+                    cheat.SetESPGlowMode("default");
+                    break;
+                case 1:
+                    cheat.SetESPGlowMode("allPlayers");
+                    break;
+                case 2:
+                    cheat.SetESPGlowMode("healthGlow");
+                    break;
+                case 3:
+                    cheat.SetESPGlowMode("healthGlowAllPlayers");
+                    break;
+                default:
+                    cheat.SetESPGlowMode("default");
+                    break;
             }
         }
     }

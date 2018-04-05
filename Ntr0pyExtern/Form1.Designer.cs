@@ -1,4 +1,6 @@
-﻿namespace Ntr0pyExtern
+﻿using System.Windows.Forms;
+
+namespace Ntr0pyExtern
 {
     partial class CheatWindow
     {
@@ -36,6 +38,7 @@
             this.espGlowCbx = new System.Windows.Forms.CheckBox();
             this.noRecoilCbx = new System.Windows.Forms.CheckBox();
             this.triggerbotCbx = new System.Windows.Forms.CheckBox();
+            this.espGlowOptionsComboBox = new System.Windows.Forms.ComboBox();
             this.dragPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,7 +124,7 @@
             this.noRecoilCbx.AutoSize = true;
             this.noRecoilCbx.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noRecoilCbx.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.noRecoilCbx.Location = new System.Drawing.Point(93, 497);
+            this.noRecoilCbx.Location = new System.Drawing.Point(93, 709);
             this.noRecoilCbx.Name = "noRecoilCbx";
             this.noRecoilCbx.Size = new System.Drawing.Size(498, 41);
             this.noRecoilCbx.TabIndex = 6;
@@ -134,7 +137,7 @@
             this.triggerbotCbx.AutoSize = true;
             this.triggerbotCbx.Font = new System.Drawing.Font("Palatino Linotype", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.triggerbotCbx.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.triggerbotCbx.Location = new System.Drawing.Point(93, 584);
+            this.triggerbotCbx.Location = new System.Drawing.Point(93, 638);
             this.triggerbotCbx.Name = "triggerbotCbx";
             this.triggerbotCbx.Size = new System.Drawing.Size(173, 41);
             this.triggerbotCbx.TabIndex = 7;
@@ -142,12 +145,29 @@
             this.triggerbotCbx.UseVisualStyleBackColor = true;
             this.triggerbotCbx.CheckedChanged += new System.EventHandler(this.triggerbotCbx_CheckedChanged);
             // 
+            // espGlowOptionsComboBox
+            // 
+            this.espGlowOptionsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.espGlowOptionsComboBox.Enabled = false;
+            this.espGlowOptionsComboBox.FormattingEnabled = true;
+            this.espGlowOptionsComboBox.Items.AddRange(new object[] {
+            "Default Glow",
+            "Default Glow + Teammates Glow",
+            "Health Based Glow",
+            "Health Based Glow + Teammates Glow"});
+            this.espGlowOptionsComboBox.Location = new System.Drawing.Point(93, 452);
+            this.espGlowOptionsComboBox.Name = "espGlowOptionsComboBox";
+            this.espGlowOptionsComboBox.Size = new System.Drawing.Size(297, 28);
+            this.espGlowOptionsComboBox.TabIndex = 8;
+            this.espGlowOptionsComboBox.SelectedIndexChanged += new System.EventHandler(this.espGlowOptionsComboBox_SelectedIndexChanged);
+            // 
             // CheatWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(58)))));
             this.ClientSize = new System.Drawing.Size(1307, 898);
+            this.Controls.Add(this.espGlowOptionsComboBox);
             this.Controls.Add(this.triggerbotCbx);
             this.Controls.Add(this.noRecoilCbx);
             this.Controls.Add(this.espGlowCbx);
@@ -176,6 +196,7 @@
         private System.Windows.Forms.CheckBox espGlowCbx;
         private System.Windows.Forms.CheckBox noRecoilCbx;
         private System.Windows.Forms.CheckBox triggerbotCbx;
+        private System.Windows.Forms.ComboBox espGlowOptionsComboBox;
     }
 }
 

@@ -19,7 +19,6 @@ namespace Ntr0pyExtern
             public bool rwuo;
         }
 
-        public bool running = false;
         Glow_T Team = new Glow_T()
         {
             r = 0,
@@ -40,6 +39,9 @@ namespace Ntr0pyExtern
         };
 
         private int Base = 0;
+        public bool running = false;
+        public bool glowHealth = false;
+        public bool glowAllPlayers = false;
 
         public ESPGlow(int Base)
         {
@@ -56,6 +58,16 @@ namespace Ntr0pyExtern
 
                 do
                 {
+                    // Initialize Team Colors
+                    EnemyTeam.r = 1;
+                    EnemyTeam.g = 0;
+                    EnemyTeam.b = 0;
+
+                    Team.r = 0;
+                    Team.g = 1;
+                    Team.b = 0;
+
+
                     address = Base + Oofsettz.localPlayerOffset;
                     int Player = MemUtility.mem.ReadInt32((IntPtr)address);
 
@@ -74,13 +86,61 @@ namespace Ntr0pyExtern
                         address = EntityList + Oofsettz.m_iGlowIndex;
                         int GlowIndex = MemUtility.mem.ReadInt32((IntPtr)address);
 
-                        if (MyTeam == OpponentTeam)
+                        if (glowHealth)
                         {
-                            EnableGlow(GlowIndex, Team);
+                            // Get Health Value
+                            address = EntityList + Oofsettz.m_iHealth;
+                            int health = MemUtility.mem.ReadInt32((IntPtr)address);
+
+                            if (MyTeam != OpponentTeam)
+                            {
+                                // Set color to appropriate values based on health
+                                if (health >= 76)
+                                {
+                                    EnemyTeam.r = 0;
+                                    EnemyTeam.g = 1;
+                                    EnemyTeam.b = 0;
+                                }
+                                else if (health >= 30 && health <=75)
+                                {
+                                    EnemyTeam.r = 1;
+                                    EnemyTeam.g = 1;
+                                    EnemyTeam.b = 0;
+                                }
+                                else
+                                {
+                                    EnemyTeam.r = 1;
+                                    EnemyTeam.g = 0;
+                                    EnemyTeam.b = 0;
+                                }
+
+                                EnableGlow(GlowIndex, EnemyTeam);
+                            }
+                            else
+                            {
+                                // If user wants to, render teammates too
+                                if (glowAllPlayers)
+                                {
+                                    Team.r = 1;
+                                    Team.g = 1;
+                                    Team.b = 0;
+                                    EnableGlow(GlowIndex, Team);
+                                }
+                            }
                         }
                         else
                         {
-                            EnableGlow(GlowIndex, EnemyTeam);
+                            if (MyTeam == OpponentTeam)
+                            {
+                                if (glowAllPlayers)
+                                {
+                                    EnableGlow(GlowIndex, Team);
+                                }
+                            }
+                            else
+                            {
+                                EnableGlow(GlowIndex, EnemyTeam);
+                            }
                         }
                     }
                     i++;
@@ -117,6 +177,5 @@ namespace Ntr0pyExtern
             current = GlowObject + calculation;
             MemUtility.mem.WriteBoolean((IntPtr)current, team.rwuo);
         }
-
     }
 }

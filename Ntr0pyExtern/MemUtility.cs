@@ -36,7 +36,7 @@ namespace Ntr0pyExtern
                     }
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return 0;
             }

@@ -9,3 +9,14 @@ C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Release\Ntr0p
 C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Release\Ntr0pyExtern.pdb
 C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Release\Ntr0pyExtern.csprojResolveAssemblyReference.cache
 C:\Users\FlareFlax\Desktop\SystemLevelProgramming\Ntr0pyExtern\obj\Release\Ntr0pyExtern.CheatWindow.resources
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\bin\Release\Ntr0pyExtern.exe.config
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\bin\Release\Ntr0pyExtern.exe
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\bin\Release\Ntr0pyExtern.pdb
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\obj\Release\Ntr0pyExtern.csprojResolveAssemblyReference.cache
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\obj\Release\Ntr0pyExtern.CheatWindow.resources
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\obj\Release\Ntr0pyExtern.Properties.Resources.resources
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\obj\Release\Ntr0pyExtern.csproj.GenerateResource.cache
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\obj\Release\Ntr0pyExtern.csproj.CoreCompileInputs.cache
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\obj\Release\Ntr0pyExtern.csproj.CopyComplete
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\obj\Release\Ntr0pyExtern.exe
+C:\Users\FlareFlax\Desktop\Ntr0pyExtern\obj\Release\Ntr0pyExtern.pdb
